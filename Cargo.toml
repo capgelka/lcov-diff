@@ -1,0 +1,26 @@
+[package]
+name = "lcov-diff-util"
+version = "0.2.0"
+authors = ["Leonid Dyachkov <ldyach@yandex.ru>"]
+description = "Command line tool to make delta of 2 lcov files"
+readme = "README.md"
+keywords = ["lcov", "coverage", "diff"]
+categories = ["parsing", 'command-line-utilities']
+repository = "https://github.com/capgelka/lcov-diff"
+edition = "2018"
+license = "MIT"
+
+[[bin]]
+name = "lcov-diff"
+path = "src/main.rs"
+
+[dependencies]
+lcov-diff = { version = "0.1", path = "lcov-diff" }
+lcov = "0.6"
+structopt = "0.3"
+tempfile = "3.2"
+log = "0.4.6"
+env_logger = "0.8.3"
+
+[workspace]
+members = ["lcov-diff"]

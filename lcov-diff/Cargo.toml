@@ -1,0 +1,16 @@
+[package]
+name = "lcov-diff"
+version = "0.1.1"
+authors = ["Leonid Dyachkov <LDyach@yandex.ru>"]
+description = "Library to get deltas of lcov coverage files"
+readme = "README.md"
+keywords = ["lcov", "coverage", "diff"]
+categories = ["parsing"]
+repository = "https://github.com/capgelka/lcov-diff"
+edition = "2018"
+license = "MIT"
+
+
+[dependencies]
+lcov = "0.6"
+
