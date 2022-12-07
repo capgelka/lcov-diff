@@ -30,7 +30,7 @@ cargo test --all
 To install (to `$HOME/.cargo/bin`):
 
 ```
-cargo install --path
+cargo install --path .
 ```
 
 See `cargo` [docs](https://doc.rust-lang.org/cargo/commands/cargo-doc.html)
@@ -39,7 +39,7 @@ See `cargo` [docs](https://doc.rust-lang.org/cargo/commands/cargo-doc.html)
 
 ```
 USAGE:
-    lcov-diff [FLAGS] [OPTIONS] <FILE>...
+    lcov-diff [FLAGS] [OPTIONS] <FILE1> <FILE2>
 
 FLAGS:
     -h, --help       Prints help information
@@ -51,7 +51,7 @@ OPTIONS:
     -w, --web <web>        Generate html report from output file (default name web)
 
 ARGS:
-    <FILE>...    Files to process, right now just two of them
+    <FILE1> <FILE2>    Files to process, right now just two of them
 ```
 
 The output file contains the only lines/functions/basic blocks which are presented only in the first lcov file.
