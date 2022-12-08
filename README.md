@@ -2,6 +2,7 @@
 [![Docs.rs](https://docs.rs/lcov/badge.svg)](https://docs.rs/lcov-diff-util/)
 [![Travis CI Build Status](https://travis-ci.org/capgelka/lcov-diff.svg?branch=master)](https://travis-ci.org/capgelka/lcov-diff)
 ![LICENSE](https://img.shields.io/crates/l/lcov-diff.svg)
+
 # Lcov Diff
 
 ## Prerequisites
@@ -35,7 +36,7 @@ cargo install --path .
 
 See `cargo` [docs](https://doc.rust-lang.org/cargo/commands/cargo-doc.html)
 
-## Tool to diff lcov files.
+## Tool to diff lcov files
 
 ```
 USAGE:
@@ -58,8 +59,8 @@ The output file contains the only lines/functions/basic blocks which are present
 To generate html report for the diff use `genhtml tool`, [see](#Prerequisites).
 
 ```bash
-lcov-diff first.lcov second.lcov -o out.lcov
-genhtml --ignore-errors source -o web out.lcov
+lcov-diff first.info second.info -o out.info
+genhtml --ignore-errors source -o web out.info
 ```
 
 Or just run with `-w`/`--web` option to generate it automatically after getting diff file
@@ -68,5 +69,5 @@ The default output directory name is `web`.
 Also, it gets into panic if `genhtml` could not be invoked.
 
 ```bash
-lcov-diff first.lcov second.lcov -w LCOV_HTML_DIR -o out.lcov
+lcov-diff first.info second.info -w LCOV_HTML_DIR -o out.info
 ```

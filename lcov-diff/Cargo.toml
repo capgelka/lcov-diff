@@ -1,6 +1,6 @@
 [package]
 name = "lcov-diff"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Leonid Dyachkov <LDyach@yandex.ru>"]
 description = "Library to get deltas of lcov coverage files"
 readme = "README.md"
@@ -12,5 +12,5 @@ license = "MIT"
 
 
 [dependencies]
-lcov = "0.6"
+lcov = "0.8"
 

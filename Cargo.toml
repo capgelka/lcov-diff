@@ -1,6 +1,6 @@
 [package]
 name = "lcov-diff-util"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Leonid Dyachkov <ldyach@yandex.ru>"]
 description = "Command line tool to make delta of 2 lcov files"
 readme = "README.md"
@@ -16,11 +16,11 @@ path = "src/main.rs"
 
 [dependencies]
 lcov-diff = { version = "0.1", path = "lcov-diff" }
-lcov = "0.6"
+lcov = "0.8"
 structopt = "0.3"
-tempfile = "3.2"
-log = "0.4.6"
-env_logger = "0.8.3"
+tempfile = "3.3"
+log = "0.4.17"
+env_logger = "0.10"
 
 [workspace]
 members = ["lcov-diff"]
